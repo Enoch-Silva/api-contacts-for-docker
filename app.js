@@ -23,7 +23,7 @@ db.authenticate()
     console.log("Ocorreu um erro ao conectar", err);
   });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3300;
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -38,5 +38,5 @@ app.use("/contacts", require("./routes/contacts"));
 app.use(express.json());
 
 app.listen(PORT, () => {
-  console.log("rodando em - http://localhost:3000");
+  console.log("rodando em - http://localhost:3300");
 });
